@@ -1,8 +1,209 @@
-pre {
-  min-height: 34px;
+html, section {
+  height: 100%;
+}
+body {
+  background-image: url(http://codifyacademy.com/chris/morsecode/img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 0;
+  background-position: 75%;
+}
+section {
+  background-color: rgba(0,0,0,0.7);
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  
+}
+div.animated {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  width: 100%;
+  transform: translate(-50%, -50%) 
+}
+textarea {
+  width: 40%;
+  background-color: rgba(0,0,0, 0.5);
+  color: #FFF;
+  padding: 1%;
+  border-radius: 6px;
+  border-color: #000;
+}
+textarea:focus {
+  border-color: #FFF;
+  outline: none;
+}
+button {
+  color: #fff;
+  background-color: rgba(0,0,0, 0.3);
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  width: 100px;
+}
+button:hover,
+button:focus {
+  color: #fff;
+  background-color: rgba(0,0,0, 0.7);
+  border-color: #000;
+}
+#morseWrapper {
+  display: none;
+  position: fixed;
+  bottom:50px;
+  width:100%;
+  text-align: center;
+}
+#morseWrapper h2 {
+  margin-top:0;
+}
+#morse {
+  width: 75%;
+  margin: 0 auto;
+  height: 100px;
+  overflow: auto;
+  font-size: 20px;
+}
+::-moz-selection {
+    background: rgba(255,255,255, 0.4);
+    color: #000;
+}
+::selection {
+    background: rgba(255,255,255, 0.4);
+    color: #000;
+}
+::-webkit-scrollbar {
+      width: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#fff;
+}
+@charset "UTF-8";
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+.zoomInDown {
+  -webkit-animation-name: zoomInDown;
+          animation-name: zoomInDown;
+}
+@-webkit-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+            transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+@keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+            transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+.zoomInUp {
+  -webkit-animation-name: zoomInUp;
+          animation-name: zoomInUp;
 }
 
-small {
-  color: #AEAEAE;
-  font-size: 13px;
+
+
+
+@media screen and (min-width: 1000px) {
+  div.animated {
+    top: 30%;
+  }
+}
+@media screen and (max-width: 550px) {
+  textarea {
+    width: 75%
+  }
 }
