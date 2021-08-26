@@ -1,29 +1,29 @@
 <html>
-	<head>
+  <head>
       <meta charset="utf-8">
       <meta name="author" content="Chris Brody @ Codify Academy">
       <meta name="description" content="Converting Your English/Morse Code on Key Press">
       <title>Morse Code Converter</title>
       <link rel="shortcut icon" href="favicon.ico">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	</head>
-	<body>
+  </head>
+  <body>
 
-		<section>
-			<div class="animated zoomInDown">
-				<h1>Type and Submit to Convert to Morse Code</h1>
-				<textarea autofocus id="englishInput" onkeyup="userEnglishInput()" onkeypress="return runScript(event)" rows="3"></textarea>
-				<br>
-				<br>
-				<button onclick="translateToMorse()">Translate</button>
-				<button style="margin-left:3px;" onclick="resetTranslate()">Reset</button>
-			</div>
-			<div id="morseWrapper">
-				<h2>Coverted Morse Code</h2>
-				<div id="morse"></div>
-			</div>
-		</section>
+    <section>
+      <div class="animated zoomInDown">
+        <h1>Type and Submit to Convert to Morse Code</h1>
+        <textarea autofocus id="englishInput" onkeyup="userEnglishInput()" onkeypress="return runScript(event)" rows="3"></textarea>
+        <br>
+        <br>
+        <button onclick="translateToMorse()">Translate</button>
+        <button style="margin-left:3px;" onclick="resetTranslate()">Reset</button>
+      </div>
+      <div id="morseWrapper">
+        <h2>Coverted Morse Code</h2>
+        <div id="morse"></div>
+      </div>
+    </section>
 
-	<script src="js/main.js"></script>
-	</body>
+  <script src="js/main.js"></script>
+  </body>
 </html>
