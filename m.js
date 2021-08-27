@@ -21,7 +21,6 @@ function userEnglishInput() {
     console.log(morse);
     // replace object
     var replaceObj = {
-      .-: 'a/',
       a: '.- / ',
       b: '-... / ',
       c: '-.-. / ',
