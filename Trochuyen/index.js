@@ -8,6 +8,12 @@ var firebaseConfig = {
   };
 firebase.initializeApp(firebaseConfig);
 
+const db = firebase.database ();
+
+const username = prompt("Please Tell Us Your Name");
+
+document.getElementById("message-form").addEventListener("submit", sendMessage);
+
 function sendMessage(e) {
   e.preventDefault();
 
@@ -30,6 +36,8 @@ function sendMessage(e) {
     message,
   });
 }
+
+const fetchChat = db.ref("messages/");
 
 fetchChat.on("child_added", function (snapshot) {
   const messages = snapshot.val();
