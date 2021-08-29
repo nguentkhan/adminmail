@@ -7,6 +7,7 @@ var firebaseConfig = {
     appId: "1:318150959454:web:eca2204ac8c9f2355befcf"
   };
 firebase.initializeApp(firebaseConfig);
+
 function sendMessage(e) {
   e.preventDefault();
 
@@ -29,6 +30,7 @@ function sendMessage(e) {
     message,
   });
 }
+
 fetchChat.on("child_added", function (snapshot) {
   const messages = snapshot.val();
   const message = `<li class=${
