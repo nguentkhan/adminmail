@@ -10,7 +10,7 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database ();
 
-const username = prompt("Please Tell Us Your Name");
+const username = prompt("Làm ơn nhập nick name của bạn :)))");
 
 document.getElementById("message-form").addEventListener("submit", sendMessage);
 
