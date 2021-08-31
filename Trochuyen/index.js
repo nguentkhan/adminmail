@@ -10,7 +10,7 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.database ();
 
-const username = prompt("Please Tell Us Your Name");
+const username = id="user_para"
 
 document.getElementById("message-form").addEventListener("submit", sendMessage);
 
