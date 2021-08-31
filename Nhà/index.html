@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Authentication</title>
+    <title>morseciphertranslation.tk Đăng ký , đăng nhập</title>
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
       rel="stylesheet"
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1/>
-    <link rel="shortcut icon" type="image/png" href="https://naishare.com/images/favicon.png"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://naishare.com/images/favicon.png"
+    />
     <style>
       .forms-out {
         margin: 0 auto;
@@ -101,7 +109,6 @@
         </div>
 
         <div id="homepage" class="hide">
-         <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
           <button id="signout">Sign Out</button>
           <h3>Logged In</h3>
         </div>
@@ -117,7 +124,7 @@
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyDdjSm3UhHAT0YmakG-MKjfsbCFF3BTnnk",
+apiKey: "AIzaSyDdjSm3UhHAT0YmakG-MKjfsbCFF3BTnnk",
     authDomain: "trochuyen-67032.firebaseapp.com",
     projectId: "trochuyen-67032",
     storageBucket: "trochuyen-67032.appspot.com",
@@ -129,10 +136,6 @@
     </script>
 
     <script>
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-
       //invokes firebase authentication.
       const auth = firebase.auth();
 
