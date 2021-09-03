@@ -1,1 +1,104 @@
 
+body {
+  background-color: #FFCB2F;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "header header chat"
+    "buttons identity chat"
+    "send send chat";
+}
+
+.masthead {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.logger {
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*  align-items: center; */
+}
+
+
+.identifier {
+  grid-area: identity;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sender {
+  grid-area: send;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: chat;
+      top: 0;
+}
+
+li:nth-last-of-type(n+10) {
+  display: none;
+}
+
+
+#firepic {
+  position:relative;
+  height: 164px;
+  width: 320px;
+  display: block;
+  margin: auto;
+}
+
+#messages {
+    background-color: white;
+}
+
+#messages img {
+    max-width: 240px;
+    max-height: 160px;
+    display: block;
+}
+
+#uploader {
+  display: none;
+}
+
+
+.icon {
+  margin:10px;
+}
+
+#label{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#send {
+  margin-left: 30px;
+}
+
+#google {
+  margin: 40px;
+  width: 250px;
+}
+#facebook {
+  margin: 40px;
+  width: 250px;
+}
+#anonLogin {
+  margin: 40px;
+  width: 250px;
+}
+#logout {
+  margin: 40px;
+  width: 250px;
+}
