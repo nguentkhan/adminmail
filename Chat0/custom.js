@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   authDomain: "quantrilogin.firebaseapp.com",
   projectId: "quantrilogin",
   storageBucket: "quantrilogin.appspot.com",
-  messagingSenderId: "888154511280",
-  appId: "1:888154511280:web:c3e01663022e6956b66875"
+  messagingSenderId: "888154511280"
     };
 
     // init firebase app
