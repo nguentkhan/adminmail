@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         uploader = document.getElementById('uploader');
 
   const config = {
-        apiKey: "AIzaSyAuJPy1U0QrJGjtRaN9VV3KR5-Xe4BaClI",
-        authDomain: "login-9eb3d.firebaseapp.com",
-        databaseURL: "https://login-9eb3d.firebaseio.com",
-        storageBucket: "login-9eb3d.appspot.com",
-        messagingSenderId: "593250360595"
+        apiKey: "AIzaSyBgt4PG2En6zANLNpuDegB_pjNQDk_rRGM",
+  authDomain: "quantrilogin.firebaseapp.com",
+  projectId: "quantrilogin",
+  storageBucket: "quantrilogin.appspot.com",
+  messagingSenderId: "888154511280",
+  appId: "1:888154511280:web:c3e01663022e6956b66875"
     };
 
     // init firebase app
