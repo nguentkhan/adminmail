@@ -1,4 +1,4 @@
-alert('');
+alert('Hello,My name is Thanh.I'm not 18 years old:))))');
 
 
 var user;
