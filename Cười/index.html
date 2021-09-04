@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script> 
+    </head>
+    <body id = 'body' >
+ 
+ <div align = 'center' id = 'log_in_page'>
+     
+        <h1 id = 'title' class = 'heading'>Connect
+         
+          <button class = 'btn' id = 'sign_up_form'>Log in</button>  
+          </h1>    
+     
+ </div>
+ 
+        
+    <div  align = 'center'>
+     
+      <div id = 'signin_form' hidden >
+       <input id = 'name' type = 'text' placeholder = 'name' class = 'login'><br>
+       <input id = 'password' type = 'password' placeholder =  'password' class = 'login'><br>
+       <select id = 'regions'>
+  <option value="select">select</option>
+  <option value="Asia">Asia</option>
+  <option value="Africa">Africa</option>
+  <option value="North America">North America</option>
+  <option value="South America">South America</option>
+   <option value="Antarctica">Antarctica</option>
+    <option value="Europe">Europe</option>
+     <option value="Australia">Australia</option>
+       </select><br>
+       <button class = 'btn' id = 'sign_up'>Sign up</button><br>
+        <button class = 'btn' id = 'sign_in'>Sign in</button>
+       <button class = 'btn' id = 'cancel'>Cancel</button><br>
+       <span id = 'status'>Connect with devs today</span>
+    </div>  
+    </div>
+     
+ <div  align = 'center'  id="chartContainer">
+     <span id = 'chart-status'>Chart loading...</span>
+ </div>
+  
+    
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDuiece3JoxfJG4AaXYx7h_rEcVAjFxp4k",
+    authDomain: "fir-example1-2e955.firebaseapp.com",
+    databaseURL: "https://fir-example1-2e955.firebaseio.com",
+    projectId: "fir-example1-2e955",
+    storageBucket: "fir-example1-2e955.appspot.com",
+    messagingSenderId: "590734757003"
+  };
+  firebase.initializeApp(config);
+</script>
+    </body>
+</html>
