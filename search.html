@@ -51,80 +51,6 @@
     </head>
     <body> 
       <div class="container">
-        <h2>Freetuts.net hướng dẫn tạo Filter List</h2>
-
-        <input type="text" id="myInput" placeholder="Search for City.." title="Type in a name of City">
-
-        <ul id="myUL">
-          <li><a href="#">Athens</a></li>
-          <li><a href="#">Amsterdam</a></li>
-          <li><a href="#">Atlanta</a></li>
-          <li><a href="#">Alaska</a></li>
-          <li><a href="#">Barcelona</a></li>
-          <li><a href="#">Bologna</a></li>
-          <li><a href="#">Berlin</a></li>
-          <li><a href="#">Bordeaux</a></li>
-          <li><a href="#">Copenhagen</a></li>
-          <li><a href="#">Cardiff</a></li>
-          <li><a href="#">Caen</a></li>
-          <li><a href="#">Cannes</a></li>
-        </ul>
-      </div>
-    </body>
-    <script>
-      //<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-          * {
-            box-sizing: border-box;
-          }
-          .container {
-            width: 500px;
-            margin: auto;
-          }
-
-          #myInput {
-            background-position: 10px 12px;
-            background-repeat: no-repeat;
-            width: 100%;
-            font-size: 16px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            margin-bottom: 12px;
-          }
-
-          #myUL {
-            list-style-type: none;
-            display: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          #myUL li a {
-            border: 1px solid #ddd;
-            margin-top: -1px; 
-            background-color: #f6f6f6;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            color: black;
-            display: block
-          }
-
-          #myUL li a.header {
-            background-color: #e2e2e2;
-            cursor: default;
-          }
-          
-          #myUL li a:hover:not(.header) {
-            background-color: #eee;
-          }
-        </style>
-    </head>
-    <body> 
-      <div class="container">
         <h2>Tìm Kiếm Từ Vựng</h2>
 
         <input type="text" id="myInput" placeholder="TÌm Kiếm Từ Vựng" title="Type in a">
@@ -144,8 +70,7 @@
           <li><a href="#">Забалдать</a></li>
         </ul>
       </div>
-    </body>
-</html> lấy thẻ input
+<script>
       var input = document.getElementById("myInput");
       // định nghĩa hàm xử lý myFunction
       function myFunction() {
@@ -178,4 +103,5 @@
       //THÀNH
       input.addEventListener("keyup", myFunction);
     </script>
+    </body>
 </html>
